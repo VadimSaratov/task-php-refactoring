@@ -20,7 +20,7 @@ class DefaultBinProvider implements BinProvider
 
         return [
             'country' => [
-                'alpha2' => 'EU'
+                'alpha2' => 'DE'
             ]
         ];
     }

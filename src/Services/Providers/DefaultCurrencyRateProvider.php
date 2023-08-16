@@ -19,6 +19,6 @@ class DefaultCurrencyRateProvider implements CurrencyRatesProvider
          * for example make an API call to https://api.exchangeratesapi.io/latest
          */
 
-        return 1;
+        return 1.00;
     }
 }
