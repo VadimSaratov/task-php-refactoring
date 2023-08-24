@@ -5,9 +5,10 @@ use App\Services\Commission\DefaultCommissionCalculator;
 use App\Services\Helpers\DefaultCountryChecker;
 use App\Services\Providers\DefaultBinProvider;
 use App\Services\Providers\DefaultCurrencyRateProvider;
+use GuzzleHttp\Client;
 
-
-$binProvider = new DefaultBinProvider();
+$httpClient = new Client();
+$binProvider = new DefaultBinProvider($httpClient);
 $currencyRatesProvider = new DefaultCurrencyRateProvider();
 $countryChecker = new DefaultCountryChecker();
 
